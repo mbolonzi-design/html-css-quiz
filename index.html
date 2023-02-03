@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>HTML & CSS QUIZ</title>
+  </head>
+  <body>
+    <header>
+      <h1>HTML/CSS Quiz</h1>
+      <nav>
+        <ul>
+          <li><a href="#student-info">INFO</a></li>
+          <li><a href="#html-questions">HTML</a></li>
+          <li><a href="#css-questions">CSS</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <form action="" method="post">
+        <section role="region" aria-labelledby="student-info">
+          <h2 id="student-info">Student Info</h2>
+          <div class="info">
+            <label for="student-name">Name:</label>
+            <input id="student-name" type="text" name="student-name" />
+          </div>
+          <div class="info">
+            <label for="email">Email:</label>
+            <input id="email" type="email" name="email" />
+          </div>
+          <div class="info">
+            <label for="birth-date"
+              >D.O.B.<span class="sr-only">(Date of Birth)</span></label
+            >
+            <input id="birth-date" type="date" name="birth-date" />
+          </div>
+        </section>
+        <section role="region" aria-labelledby="html-questions">
+          <h2 id="html-questions">HTML</h2>
+          <div class="question-block">
+            <p>1</p>
+            <fieldset class="question">
+              <legend>
+                The current government is better than the previous one.
+              </legend>
+              <ul class="answer-list">
+                <li>
+                  <label for="q1-a1">
+                    <input id="q1-a1" type="radio" value="true" name="q1" />
+                    True
+                  </label>
+                </li>
+                <li>
+                  <label for="q1-a2">
+                    <input id="q1-a2" type="radio" value="false" name="q1" />
+                    False
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+          <div class="question-block">
+            <p>2</p>
+            <fieldset class="question">
+              <legend>
+                The cabinet secretaries know what they are doing in their
+                respective fields.
+              </legend>
+              <ul class="answer-list">
+                <li>
+                  <label for="q2-a1">
+                    <input id="q2-a1" type="radio" value="true" name="q2" />
+                    True
+                  </label>
+                </li>
+                <li>
+                  <label for="q2-a2">
+                    <input id="q2-a2" type="radio" value="false" name="q2" />
+                    False
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+        </section>
+        <section role="region" aria-labelledby="css-questions">
+          <h2 id="css-questions">CSS</h2>
+          <div class="formrow">
+            <div class="question-block">
+              <label for="options">Are you a software dev:</label>
+            </div>
+            <div class="answer">
+              <select id="options" name="options" required>
+                <option value="">Select an option</option>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+              </select>
+            </div>
+            <div class="question-block">
+              <label for="css-questions">Do you have any questions:</label>
+            </div>
+            <div class="answer">
+              <textarea
+                name="css-questions"
+                id="css-questions"
+                cols="30"
+                rows="5"
+                placeholder="e.g. How can i fit in your organization"
+              ></textarea>
+            </div>
+          </div>
+        </section>
+        <button type="submit">Send</button>
+      </form>
+    </main>
+    <footer>
+      <address>
+        MS Technologies <br />
+        WestLands <br />
+        Nairobi<br />
+        Kenya
+      </address>
+    </footer>
+  </body>
+</html>
